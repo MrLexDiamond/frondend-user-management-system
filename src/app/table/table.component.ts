@@ -52,7 +52,7 @@ register()
   this.http.post("http://localhost:8585/api/student/add",bodyData).subscribe((resultData: any)=>
   {
       console.log(resultData);
-      alert("Employee Registered Successfully")
+      alert("User Registered Successfully")
       this.getAllStudent();
   });
 }
@@ -91,7 +91,7 @@ UpdateRecords()
   this.http.put("http://localhost:8585/api/student/update"+ "/"+ this.currentStudentID,bodyData).subscribe((resultData: any)=>
   {
       console.log(resultData);
-      alert("Student Registered Updateddd")
+      alert("User Registered Updateddd")
       this.getAllStudent();
     
   });
@@ -117,7 +117,7 @@ setDelete(data: any)
   this.http.delete("http://localhost:8585/api/student/delete"+ "/"+ data.id).subscribe((resultData: any)=>
   {
       console.log(resultData);
-      alert("Student Deletedddd")
+      alert("User Deletedddd")
       this.getAllStudent();
   });
 }
